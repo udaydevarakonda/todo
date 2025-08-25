@@ -1,0 +1,10 @@
+<div class="task">
+  <div class="task-name">
+      {{ item.task }}
+  </div>
+  <div class="icons">
+    
+        <img src="delete-icon.png" alt="delete-icon" (click)= "deleteItem(item.id)" />
+        <img src="edit-icon.png" alt="edit-icon" (click)="openPopup(item)"/>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+<div class="header">
+  <h2>In-Progress - {{getNumberOfItems()}}</h2>
+</div>
+<ul class="lists">
+  <li *ngFor="let item of service.itemList">
+    <app-in-progress-comp [item]="item" *ngIf="item.status=='in-progress'"></app-in-progress-comp>
+  </li>
+</ul>

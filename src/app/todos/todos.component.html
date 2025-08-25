@@ -1,0 +1,8 @@
+<div class="header">
+  <h2>TO-DO - {{getNumberOfItems()}}</h2>
+</div>
+<ul class="lists">
+  <li *ngFor="let item of service.itemList" >
+    <app-todo-comp [item]="item" *ngIf="item.status=='todo'"></app-todo-comp>
+  </li>
+</ul>

@@ -1,0 +1,15 @@
+<div class="popup">
+  <div >
+    <h3>Task Actions</h3>
+    <input type="text" [(ngModel)]="item.task" />
+    <select name="" id="" [(ngModel)]="item.status">
+      <option value="todo">To Do</option>
+      <option value="in-progress">In Progress</option>
+      <option value="done">Done</option>
+    </select>
+  </div>
+  <div >
+    <button mat-button class="save btn" (click)="saveItem()" >Save</button>
+    <button mat-button class="cancel btn" (click)="closeDialog()">Cancel</button>
+  </div>
+</div>

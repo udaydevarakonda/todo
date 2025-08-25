@@ -1,0 +1,11 @@
+<div class="task">
+    <div (click)="openPopup(item)" class="task-name">
+      {{ item.task }}
+    </div>
+    <div class="icons">
+      <!-- <button (click)="openPopup()">Open Popup</button> -->
+          <img src="delete-icon.png" alt="delete-icon" (click)= "deleteItem(item.id)" />
+          <img src="tick-icon.png" alt="tick-icon"  />
+    </div>
+  </div>
+  

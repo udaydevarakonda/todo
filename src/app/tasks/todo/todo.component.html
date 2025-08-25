@@ -1,0 +1,10 @@
+<div class="main">
+  <fieldset>
+    <legend>Task Name</legend>
+    <input type="text" class="input-box" [(ngModel)]="task" />
+    <!-- <img src="smiley-icon.png" alt="smiley-icon"/> -->
+  </fieldset>
+  <button class="add" (click)="addItem(task)" [disabled]="!task.trim().length">
+    Add
+  </button>
+</div>

@@ -1,0 +1,8 @@
+<div class="header">
+    <h2>Done - {{getNumberOfItems()}}</h2>
+</div>
+<ul class="lists">
+    <li *ngFor="let item of service.itemList">
+      <app-done-comp [item]="item" *ngIf="item.status=='done'"></app-done-comp>
+    </li>
+</ul>
