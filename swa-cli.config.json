@@ -3,7 +3,7 @@
   "configurations": {
     "todo": {
       "appLocation": ".",
-      "outputLocation": "dist\\todo",
+      "outputLocation": "dist\todo\browser",
       "appBuildCommand": "npm run build",
       "run": "npm start",
       "appDevserverUrl": "http://localhost:4200"
